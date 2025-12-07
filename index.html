@@ -138,17 +138,17 @@
         }
         
         .game-logo {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 900;
             color: #1976d2;
             margin-bottom: 15px;
             font-family: 'Cairo', 'Tajawal', 'Amiri', sans-serif;
-            letter-spacing: 8px;
+            letter-spacing: 6px;
             text-transform: uppercase;
             filter: drop-shadow(0 5px 15px rgba(25, 118, 210, 0.5));
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             text-shadow: 
                 -2px -2px 0 rgba(255, 255, 255, 0.9),
                 2px -2px 0 rgba(255, 255, 255, 0.9),
@@ -930,7 +930,7 @@
         }
         
         @media (max-width: 768px) {
-            .game-logo { font-size: 40px; }
+            .game-logo { font-size: 34px; letter-spacing: 4px; gap: 6px; }
             .developer-name { font-size: 16px; }
             .start-button { font-size: 22px; padding: 15px 40px; }
             .mode-title { font-size: 32px; }
@@ -1332,7 +1332,7 @@
                         questions: [
                             { indonesian: "Buku di dalam tas", correct: ["الْكِتَابُ", "فِي", "الْحَقِيبَةِ"], distractors: ["الْكِتَابَ", "عَلَى", "الْحَقِيبَةَ", "الطَّاوِلَةِ"] },
                             { indonesian: "Siswa di dalam kelas", correct: ["الطَّالِبُ", "فِي", "الْفَصْلِ"], distractors: ["الطَّالِبَ", "مِنْ", "الْفَصْلَ", "الْمَدْرَسَةِ"] },
-                            { indonesian: "Guru di depan papan tulis", correct: ["الْمُعَلِّمُ", "أَمَامَ", "السَّبُّورَةِ"], distractors: ["الْمُعَلِّمَ", "خَلْفَ", "السَّبُّورَةَ", "الْبَابِ"] }
+                            { indonesian: "Guru di depan papan tulis", correct: ["الْمُعَلِّمُ", "أَمَامَ", "السَّبُّورَةِ"], distractors: ["الْمُعَلِّمَ", "خَلْفَ", "السَّبُ  ورَةَ", "الْبَابِ"] }
                         ]
                     }
                 ]
@@ -1343,7 +1343,7 @@
                     {
                         name: "Fi'il Fa'il",
                         questions: [
-                            { indonesian: "Siswa datang", correct: ["جَاءَ", "الطَّالِبُ"], distractors: ["جَاءَ", "الطَّالِبَ", "ذَهَبَ", "الْمُعَلِّمُ"] },
+                            { indonesian: "Siswa datang", correct: ["  َاءَ", "الطَّالِبُ"], distractors: ["جَاءَ", "الطَّالِبَ", "ذَهَبَ", "الْمُعَلِّمُ"] },
                             { indonesian: "Anak laki-laki duduk", correct: ["جَلَسَ", "الْوَلَدُ"], distractors: ["جَلَسَ", "الْوَلَدَ", "قَامَ", "الرَّجُلُ"] },
                             { indonesian: "Murid menulis", correct: ["كَتَبَ", "التِّلْمِيذُ"], distractors: ["كَتَبَ", "التِّلْمِيذَ", "قَرَأَ", "الأُسْتَاذُ"] }
                         ]
@@ -1351,7 +1351,7 @@
                     {
                         name: "Fi'il Fa'il Maf'ul Bih",
                         questions: [
-                            { indonesian: "Siswa menulis pelajaran", correct: ["كَتَبَ", "الطَّالِبُ", "الدَّرْسَ"], distractors: ["كَتَبَ", "الطَّالِبَ", "الدَّرْسُ", "الْوَاجِبَ", "قَرَأَ", "الْمُعَلِّمُ"] },
+                            { indonesian: "Siswa menulis pelajaran", correct: ["كَتَبَ", "الطَّالِبُ", "الدَّرْسَ"], distractors: ["كَتَبَ", "الطَّالِبَ", "الدَّرْسُ", "الْوَاجِب  ", "قَرَأَ", "الْمُعَلِّمُ"] },
                             { indonesian: "Anak laki-laki membaca buku", correct: ["قَرَأَ", "الْوَلَدُ", "الْكِتَابَ"], distractors: ["قَرَأَ", "الْوَلَدَ", "الْكِتَابُ", "الْقِصَّةَ", "كَتَبَ", "الطَّالِبُ"] },
                             { indonesian: "Murid menghafal Al-Quran", correct: ["حَفِظَ", "التِّلْمِيذُ", "الْقُرْآنَ"], distractors: ["حَفِظَ", "التِّلْمِيذَ", "الْقُرْآنُ", "الدَّرْسَ", "فَهِمَ", "الأُسْتَاذُ"] }
                         ]
@@ -1366,7 +1366,7 @@
                         questions: [
                             { indonesian: "Siswa pergi ke sekolah di pagi hari", correct: ["يَذْهَبُ", "الطَّالِبُ", "إِلَى", "الْمَدْرَسَةِ", "صَبَاحًا"], distractors: ["يَذْهَبُ", "الطَّالِبَ", "فِي", "الْمَدْرَسَةُ", "مَسَاءً", "يَرْجِعُ", "الْبَيْتِ"] },
                             { indonesian: "Guru membaca pelajaran baru dengan jelas", correct: ["قَرَأَ", "الْمُعَلِّمُ", "الدَّرْسَ", "الْجَدِيدَ", "بِوُضُوحٍ"], distractors: ["قَرَأَ", "الْمُعَلِّمَ", "الدَّرْسُ", "الْجَدِيدُ", "بِوُضُوحًا", "شَرَحَ", "السُّؤَالَ"] },
-                            { indonesian: "Para siswa duduk di dalam kelas dengan sopan", correct: ["يَجْلِسُ", "الطُّلَّابُ", "فِي", "الْفَصْلِ", "بِأَدَبٍ"], distractors: ["يَجْلِسُ", "الطُّلَّابَ", "عَلَى", "الْفَصْلُ", "بِأَدَبًا", "يَقُومُ", "الْكَرَاسِي"] }
+                            { indonesian: "Para siswa duduk di dalam kelas dengan sopan", correct: ["يَجْلِسُ", "الطُّلَّابُ", "فِي", "الْفَصْلِ", "بِأَدَبٍ"], distractors: ["  َجْلِسُ", "الطُّلَّابَ", "عَلَى", "الْفَصْلُ", "بِأَدَبًا", "يَقُومُ", "الْكَرَاسِي"] }
                         ]
                     }
                 ]
@@ -2214,18 +2214,20 @@
             const subLevel = levelData.subLevels[currentSubLevel];
             
             for (let i = 0; i < playerNames.length; i++) {
-                const result = await window.dataSdk.create({
+                const scoreData = {
                     player_name: playerNames[i],
-                    level: currentLevel,
-                    sublevel: currentSubLevel,
+                    level: currentLevel.toString(),
+                    sublevel: currentSubLevel.toString(),
                     sublevel_name: subLevel.name,
-                    score: scores[i],
-                    correct_answers: correctAnswers[i],
-                    wrong_answers: wrongAnswers[i],
-                    time: timers[i],
+                    score: scores[i].toString(),
+                    correct_answers: correctAnswers[i].toString(),
+                    wrong_answers: wrongAnswers[i].toString(),
+                    time: (currentMode === '1player' ? timers[i] : 0).toString(),
                     mode: currentMode,
                     timestamp: new Date().toISOString()
-                });
+                };
+                
+                const result = await window.dataSdk.create(scoreData);
                 
                 if (result.isError) {
                     console.error('Failed to save score');
@@ -2333,13 +2335,17 @@
             if (!content) return;
             
             if (allScores.length === 0) {
-                content.innerHTML = '<p style="text-align: center; color: #ffffff; font-size: 20px; padding: 20px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);">Belum ada skor tersimpan. Mainkan game untuk muncul di sini!</p>';
+                content.innerHTML = '<p style="text-align: center; color: #0d47a1; font-size: 20px; padding: 20px; text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);">Belum ada skor tersimpan. Mainkan game untuk muncul di sini!</p>';
                 return;
             }
             
             const sortedScores = [...allScores].sort((a, b) => {
-                if (b.score !== a.score) return b.score - a.score;
-                return a.time - b.time;
+                const scoreA = parseInt(a.score) || 0;
+                const scoreB = parseInt(b.score) || 0;
+                if (scoreB !== scoreA) return scoreB - scoreA;
+                const timeA = parseInt(a.time) || 0;
+                const timeB = parseInt(b.time) || 0;
+                return timeA - timeB;
             }).slice(0, 10);
             
             let html = '<table style="width: 100%; border-collapse: collapse;">';
@@ -2358,17 +2364,19 @@
             sortedScores.forEach((score, index) => {
                 const bgColor = index % 2 === 0 ? 'rgba(66, 165, 245, 0.15)' : 'rgba(255, 255, 255, 0.05)';
                 const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '';
-                const subLevelInfo = score.sublevel !== undefined ? `${score.sublevel + 1}` : '-';
+                const subLevelNum = parseInt(score.sublevel);
+                const subLevelInfo = !isNaN(subLevelNum) ? `${subLevelNum + 1}` : '-';
+                const displayTime = score.time && score.time !== '0' ? `${score.time}s` : '-';
                 html += `<tr style="background: ${bgColor};">`;
-                html += `<td style="padding: 10px; text-align: center; font-weight: 700; font-size: 18px; color: #ffffff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">${medal} ${index + 1}</td>`;
-                html += `<td style="padding: 10px; font-weight: 700; color: #ffffff; font-size: 15px; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);">${score.player_name}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">L${score.level}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">${subLevelInfo}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-weight: 700; color: #64b5f6; font-size: 16px; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);">${score.score}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">${score.correct_answers || 0}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">${score.wrong_answers || 0}</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">${score.time}s</td>`;
-                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);">${score.mode === '1player' ? '1P' : '2P'}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-weight: 700; font-size: 18px; color: #0d47a1; text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);">${medal} ${index + 1}</td>`;
+                html += `<td style="padding: 10px; font-weight: 700; color: #0d47a1; font-size: 15px; text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);">${score.player_name}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">L${score.level}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">${subLevelInfo}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-weight: 700; color: #1976d2; font-size: 16px; text-shadow: 0 2px 6px rgba(255, 255, 255, 0.8);">${score.score}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">${score.correct_answers || 0}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">${score.wrong_answers || 0}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">${displayTime}</td>`;
+                html += `<td style="padding: 10px; text-align: center; font-size: 14px; color: #1565c0; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);">${score.mode === '1player' ? '1P' : '2P'}</td>`;
                 html += '</tr>';
             });
             
@@ -2523,7 +2531,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aa08e7fa7ce283c',t:'MTc2NTA3NDE2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aa165c4725f910a',t:'MTc2NTA4Mjk3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
