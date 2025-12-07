@@ -257,7 +257,7 @@
             opacity: 0;
             animation: slideUp 1s ease-out 1s forwards;
             width: 100%;
-            max-width: 280px;
+            max-width: 200px;
             position: relative;
             transform: translateY(0);
         }
@@ -317,7 +317,7 @@
             align-items: center;
             gap: 12px;
             width: 100%;
-            max-width: 350px;
+            max-width: 200px;
             margin: 0 auto;
         }
         
@@ -1036,6 +1036,8 @@
     </div>
    </div>
    <div class="screen mode-screen" id="modeScreen">
+    <div style="position: absolute; top: 20px; left: 20px; display: flex; gap: 10px;"><button class="home-button" onclick="goToHome()">🏠 HOME</button>
+    </div>
     <h2 class="mode-title">Pilih Mode Permainan</h2>
     <div class="mode-buttons">
      <div class="mode-card" id="mode1Player">
@@ -1063,12 +1065,16 @@
     </div>
    </div>
    <div class="screen name-input-screen" id="nameInputScreen">
+    <div style="position: absolute; top: 20px; left: 20px; display: flex; gap: 10px;"><button class="home-button" onclick="goToHome()">🏠 HOME</button> <button class="back-button" onclick="backToModeSelection()">⬅️ KEMBALI</button>
+    </div>
     <div class="name-form">
      <h2 class="name-title">Masukkan Nama Kamu</h2>
      <div id="nameInputs"></div><button class="submit-button" id="submitNamesButton">LANJUT</button>
     </div>
    </div>
    <div class="screen level-screen" id="levelScreen">
+    <div style="position: absolute; top: 20px; left: 20px; display: flex; gap: 10px;"><button class="home-button" onclick="goToHome()">🏠 HOME</button> <button class="back-button" onclick="backToNameInput()">⬅️ KEMBALI</button>
+    </div>
     <h2 class="mode-title">Pilih Level Permainan</h2>
     <div class="level-grid">
      <div class="level-card" onclick="showSubLevels(1)">
@@ -1117,7 +1123,9 @@
      </div>
     </div>
    </div>
-   <div class="screen level-screen" id="subLevelScreen"><button class="back-to-levels-button" onclick="backToMainLevels()">⬅️ KEMBALI KE LEVEL</button>
+   <div class="screen level-screen" id="subLevelScreen">
+    <div style="position: absolute; top: 20px; left: 20px; display: flex; gap: 10px;"><button class="home-button" onclick="goToHome()">🏠 HOME</button> <button class="back-button" onclick="backToMainLevels()">⬅️ KEMBALI</button>
+    </div>
     <h2 class="mode-title">Pilih Bagian Level 1</h2>
     <div class="sublevel-grid">
      <div class="sublevel-card" onclick="selectLevelWithSub(1, 0)">
@@ -1301,7 +1309,7 @@
                     {
                         name: "Mudhaf Mudhaf Ilaih",
                         questions: [
-                            { indonesian: "Buku siswa", correct: ["كِتَابُ", "الطَّالِبِ"], distractors: ["كِتَابَ", "الطَّالِبُ", "قَلَمُ", "الْمُعَلِّمِ"] },
+                            { indonesian: "Buku siswa", correct: ["كِتَابُ", "الطَّالِبِ"], distractors: ["كِتَابَ", "الطَّالِبُ", "قَلَ��ُ", "الْمُعَلِّمِ"] },
                             { indonesian: "Pintu sekolah", correct: ["بَابُ", "الْمَدْرَسَةِ"], distractors: ["بَابَ", "الْمَدْرَسَةُ", "نَافِذَةُ", "الْفَصْلِ"] },
                             { indonesian: "Pulpen guru", correct: ["قَلَمُ", "الأُسْتَاذِ"], distractors: ["قَلَمَ", "الأُسْتَاذُ", "دَفْتَرُ", "التِّلْمِيذِ"] }
                         ]
@@ -1310,7 +1318,7 @@
                         name: "Na'at Man'ut",
                         questions: [
                             { indonesian: "Buku yang baru", correct: ["الْكِتَابُ", "الْجَدِيدُ"], distractors: ["الْكِتَابَ", "الْجَدِيدَ", "الْقَلَمُ", "الْقَدِيمُ"] },
-                            { indonesian: "Siswa yang rajin", correct: ["الطَّالِبُ", "الْمُجْتَهِدُ"], distractors: ["الطَّالِبَ", "الْمُجْتَهِدَ", "الْمُعَلِّمُ", "الذَّكِيُّ"] },
+                            { indonesian: "Siswa yang rajin", correct: ["الطَّالِبُ", "ال��مُجْتَهِد����"], distractors: ["الطَّالِبَ", "الْمُجْتَهِدَ", "الْمُعَلِّمُ", "الذَّكِيُّ"] },
                             { indonesian: "Rumah yang besar", correct: ["الْبَيْتُ", "الْكَبِيرُ"], distractors: ["الْبَيْتَ", "الْكَبِيرَ", "الْمَسْجِدُ", "الصَّغِيرُ"] }
                         ]
                     }
@@ -1331,8 +1339,8 @@
                         name: "Mubtada Khabar (Khabar Syibhul Jumlah)",
                         questions: [
                             { indonesian: "Buku di dalam tas", correct: ["الْكِتَابُ", "فِي", "الْحَقِيبَةِ"], distractors: ["الْكِتَابَ", "عَلَى", "الْحَقِيبَةَ", "الطَّاوِلَةِ"] },
-                            { indonesian: "Siswa di dalam kelas", correct: ["الطَّالِبُ", "فِي", "الْفَصْلِ"], distractors: ["الطَّالِبَ", "مِنْ", "الْفَصْلَ", "الْمَدْرَسَةِ"] },
-                            { indonesian: "Guru di depan papan tulis", correct: ["الْمُعَلِّمُ", "أَمَامَ", "السَّبُّورَةِ"], distractors: ["الْمُعَلِّمَ", "خَلْفَ", "السَّبُ  ورَةَ", "الْبَابِ"] }
+                            { indonesian: "Siswa di dalam kelas", correct: ["الطَّالِبُ", "فِي", "الْفَصْلِ"], distractors: ["الطَّال��بَ", "م����ْ", "الْفَصْل��", "الْمَدْرَسَةِ"] },
+                            { indonesian: "Guru di depan papan tulis", correct: ["الْمُعَلِّمُ", "أَمَامَ", "السَّبُّورَةِ"], distractors: ["الْمُعَلِّمَ", "خَلْفَ", "السَّبُ��ورَةَ", "الْبَابِ"] }
                         ]
                     }
                 ]
@@ -1343,7 +1351,7 @@
                     {
                         name: "Fi'il Fa'il",
                         questions: [
-                            { indonesian: "Siswa datang", correct: ["  َاءَ", "الطَّالِبُ"], distractors: ["جَاءَ", "الطَّالِبَ", "ذَهَبَ", "الْمُعَلِّمُ"] },
+                            { indonesian: "Siswa datang", correct: ["��َاءَ", "الطَّالِبُ"], distractors: ["جَاءَ", "الطَّالِبَ", "ذَهَبَ", "الْمُعَلِّمُ"] },
                             { indonesian: "Anak laki-laki duduk", correct: ["جَلَسَ", "الْوَلَدُ"], distractors: ["جَلَسَ", "الْوَلَدَ", "قَامَ", "الرَّجُلُ"] },
                             { indonesian: "Murid menulis", correct: ["كَتَبَ", "التِّلْمِيذُ"], distractors: ["كَتَبَ", "التِّلْمِيذَ", "قَرَأَ", "الأُسْتَاذُ"] }
                         ]
@@ -1351,7 +1359,7 @@
                     {
                         name: "Fi'il Fa'il Maf'ul Bih",
                         questions: [
-                            { indonesian: "Siswa menulis pelajaran", correct: ["كَتَبَ", "الطَّالِبُ", "الدَّرْسَ"], distractors: ["كَتَبَ", "الطَّالِبَ", "الدَّرْسُ", "الْوَاجِب  ", "قَرَأَ", "الْمُعَلِّمُ"] },
+                            { indonesian: "Siswa menulis pelajaran", correct: ["كَتَبَ", "الطَّالِبُ", "الدَّرْسَ"], distractors: ["كَتَبَ", "الطَّالِبَ", "الدَّرْسُ", "الْوَاجِب��", "قَرَأَ", "الْمُعَلِّمُ"] },
                             { indonesian: "Anak laki-laki membaca buku", correct: ["قَرَأَ", "الْوَلَدُ", "الْكِتَابَ"], distractors: ["قَرَأَ", "الْوَلَدَ", "الْكِتَابُ", "الْقِصَّةَ", "كَتَبَ", "الطَّالِبُ"] },
                             { indonesian: "Murid menghafal Al-Quran", correct: ["حَفِظَ", "التِّلْمِيذُ", "الْقُرْآنَ"], distractors: ["حَفِظَ", "التِّلْمِيذَ", "الْقُرْآنُ", "الدَّرْسَ", "فَهِمَ", "الأُسْتَاذُ"] }
                         ]
@@ -1365,8 +1373,8 @@
                         name: "Kalimat Lengkap",
                         questions: [
                             { indonesian: "Siswa pergi ke sekolah di pagi hari", correct: ["يَذْهَبُ", "الطَّالِبُ", "إِلَى", "الْمَدْرَسَةِ", "صَبَاحًا"], distractors: ["يَذْهَبُ", "الطَّالِبَ", "فِي", "الْمَدْرَسَةُ", "مَسَاءً", "يَرْجِعُ", "الْبَيْتِ"] },
-                            { indonesian: "Guru membaca pelajaran baru dengan jelas", correct: ["قَرَأَ", "الْمُعَلِّمُ", "الدَّرْسَ", "الْجَدِيدَ", "بِوُضُوحٍ"], distractors: ["قَرَأَ", "الْمُعَلِّمَ", "الدَّرْسُ", "الْجَدِيدُ", "بِوُضُوحًا", "شَرَحَ", "السُّؤَالَ"] },
-                            { indonesian: "Para siswa duduk di dalam kelas dengan sopan", correct: ["يَجْلِسُ", "الطُّلَّابُ", "فِي", "الْفَصْلِ", "بِأَدَبٍ"], distractors: ["  َجْلِسُ", "الطُّلَّابَ", "عَلَى", "الْفَصْلُ", "بِأَدَبًا", "يَقُومُ", "الْكَرَاسِي"] }
+                            { indonesian: "Guru membaca pelajaran baru dengan jelas", correct: ["قَرَأَ", "الْمُعَلِّمُ", "الدَّرْسَ", "الْجَدِيدَ", "بِوُضُوحٍ"], distractors: ["قَرَأَ", "الْمُعَلِّمَ", "الدَّرْسُ", "الْجَدِيدُ", "بِوُضُوحًا", "شَرَ��َ", "السُّ��َالَ"] },
+                            { indonesian: "Para siswa duduk di dalam kelas dengan sopan", correct: ["يَجْلِسُ", "الطُّلَّابُ", "فِي", "الْفَصْلِ", "بِأَدَبٍ"], distractors: ["��َجْلِسُ", "الطُّلَّابَ", "عَلَى", "الْفَصْلُ", "بِأَدَبًا", "يَقُومُ", "الْكَرَاسِي"] }
                         ]
                     }
                 ]
@@ -1440,6 +1448,18 @@
             playButtonSound();
             document.getElementById('subLevelScreen').classList.remove('active');
             document.getElementById('levelScreen').classList.add('active');
+        }
+        
+        function backToModeSelection() {
+            playButtonSound();
+            document.getElementById('nameInputScreen').classList.remove('active');
+            document.getElementById('modeScreen').classList.add('active');
+        }
+        
+        function backToNameInput() {
+            playButtonSound();
+            document.getElementById('levelScreen').classList.remove('active');
+            document.getElementById('nameInputScreen').classList.add('active');
         }
         
         function selectLevelWithSub(level, subLevel) {
@@ -2041,9 +2061,11 @@
             }, 800);
         }
         
-        function showGameOverMessage() {
+        async function showGameOverMessage() {
             const winner = scores[0] > scores[1] ? playerNames[0] : 
                          scores[1] > scores[0] ? playerNames[1] : 'Seri';
+            
+            await saveScore();
             
             const message = document.createElement('div');
             message.style.cssText = `
@@ -2067,10 +2089,9 @@
                 <button onclick="playButtonSound(); this.parentElement.remove(); backToLevels();" style="background: white; color: #1976d2; border: none; padding: 15px 30px; border-radius: 10px; cursor: pointer; font-size: 20px; font-weight: 700;">OK</button>
             `;
             document.body.appendChild(message);
-            saveScore();
         }
         
-        function nextSharedQuestion() {
+        async function nextSharedQuestion() {
             const levelData = questions[currentLevel];
             const subLevel = levelData.subLevels[currentSubLevel];
             
@@ -2079,8 +2100,8 @@
             if (currentQuestion >= subLevel.questions.length) {
                 if (currentLevel === 1) {
                     clearInterval(sharedQuestionTimerInterval);
-                    setTimeout(() => {
-                        showGameOverMessage();
+                    setTimeout(async () => {
+                        await showGameOverMessage();
                     }, 500);
                     return;
                 }
@@ -2090,8 +2111,8 @@
                 
                 if (currentSubLevel >= levelData.subLevels.length) {
                     clearInterval(sharedQuestionTimerInterval);
-                    setTimeout(() => {
-                        showGameOverMessage();
+                    setTimeout(async () => {
+                        await showGameOverMessage();
                     }, 500);
                     return;
                 }
@@ -2109,7 +2130,7 @@
             startSharedQuestionTimer();
         }
         
-        function nextQuestion() {
+        async function nextQuestion() {
             const levelData = questions[currentLevel];
             const subLevel = levelData.subLevels[currentSubLevel];
             
@@ -2119,6 +2140,8 @@
                 if (currentLevel === 1) {
                     clearInterval(timerIntervals[0]);
                     clearInterval(questionTimerIntervals[0]);
+                    
+                    await saveScore();
                     
                     const message = document.createElement('div');
                     message.style.cssText = `
@@ -2144,7 +2167,6 @@
                         <button onclick="playButtonSound(); this.parentElement.remove(); backToSubLevels();" style="background: white; color: #1976d2; border: none; padding: 15px 30px; border-radius: 10px; cursor: pointer; font-size: 20px; font-weight: 700;">OK</button>
                     `;
                     document.body.appendChild(message);
-                    saveScore();
                     return;
                 }
                 
@@ -2154,6 +2176,8 @@
                 if (currentSubLevel >= levelData.subLevels.length) {
                     clearInterval(timerIntervals[0]);
                     clearInterval(questionTimerIntervals[0]);
+                    
+                    await saveScore();
                     
                     const message = document.createElement('div');
                     message.style.cssText = `
@@ -2179,7 +2203,6 @@
                         <button onclick="playButtonSound(); this.parentElement.remove(); backToLevels();" style="background: white; color: #1976d2; border: none; padding: 15px 30px; border-radius: 10px; cursor: pointer; font-size: 20px; font-weight: 700;">OK</button>
                     `;
                     document.body.appendChild(message);
-                    saveScore();
                     return;
                 }
             }
@@ -2208,7 +2231,10 @@
         }
         
         async function saveScore() {
-            if (!window.dataSdk) return;
+            if (!window.dataSdk) {
+                console.error('Data SDK not available');
+                return;
+            }
             
             const levelData = questions[currentLevel];
             const subLevel = levelData.subLevels[currentSubLevel];
@@ -2227,10 +2253,18 @@
                     timestamp: new Date().toISOString()
                 };
                 
-                const result = await window.dataSdk.create(scoreData);
+                console.log('Attempting to save score:', scoreData);
                 
-                if (result.isError) {
-                    console.error('Failed to save score');
+                try {
+                    const result = await window.dataSdk.create(scoreData);
+                    
+                    if (result.isOk) {
+                        console.log('Score saved successfully');
+                    } else if (result.isError) {
+                        console.error('Failed to save score:', result.error);
+                    }
+                } catch (error) {
+                    console.error('Exception while saving score:', error);
                 }
             }
         }
@@ -2531,5 +2565,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aa165c4725f910a',t:'MTc2NTA4Mjk3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aa17cb91073d9e4',t:'MTc2NTA4MzkxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
